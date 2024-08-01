@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1926.15" height="497.621" viewBox="0 0 1926.15 497.621">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.482" y1="1" x2="0.482" y2="-0.013" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#201943" stop-opacity="0.69"/>
+      <stop offset="1" stop-color="#201943"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_12141" data-name="Path 12141" d="M0,0H1920V422.014s-446.748,54.607-926.748,54.607S0,422.014,0,422.014Z" transform="translate(0 677.256)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="breadcrump" transform="translate(-5148 1618.182)">
+    <path id="Path_12138" data-name="Path 12138" d="M-6.151,682.65H1920v357.62s-446.748,134.607-926.748,134.607S0,1040.27,0,1040.27Z" transform="translate(5154.15 -2295.438)" fill="#01d681"/>
+    <path id="Path_12139" data-name="Path 12139" d="M0,682.65H1920v339.026s-446.748,132.2-926.748,132.2S0,1021.676,0,1021.676Z" transform="translate(5154.15 -2295.438)" fill="url(#linear-gradient)"/>
+    <g id="breadcrump-2" data-name="breadcrump" transform="translate(5154.15 -2295.438)" clip-path="url(#clip-path)">
+      <path id="Path_12140" data-name="Path 12140" d="M458.426,946.375c115.275,14.77,252.534-4.18,327.058-93.3,73.5-87.9,25.568-219.417,30.156-333.872,3.142-78.406,4.645-152.007-7.575-229.52-14.835-94.1,7.045-215.042-71.111-269.579-78.361-54.68-183.2,18.764-278.528,25.6C372.8,51.846,281.457,14.514,207.505,58.076c-76.375,44.99-106.716,136.111-140.324,218.1-36.4,88.789-83.78,180.71-61.41,274.02,23.09,96.314,106.783,160.96,181.336,226.213C269.419,848.449,349.9,932.469,458.426,946.375" transform="translate(1576.917 1153.877) rotate(-106)" fill="#241b3e" opacity="0.48"/>
+    </g>
+  </g>
+</svg>

@@ -363,10 +363,11 @@ header {
 }
 header.header-home{
   background: url("../images/header.svg") !important;
-  height: auto ;
+  height: auto;
   background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;  
+    padding-bottom: 4rem;
 }
 .breadcrumb{
   text-align: center;
@@ -876,8 +877,8 @@ footer .rights-links a{
     top: -4rem;
   }
   #hero .header-img {
-    aspect-ratio: 3 / 4 !important;
-
+    aspect-ratio: 5 / 4 !important;
+    height: 100%;
 }
 }
 

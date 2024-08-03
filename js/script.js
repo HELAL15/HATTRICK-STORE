@@ -13,6 +13,19 @@ $(document).ready(function(){
     }
 
 
+
+    const navToggler = $("#nav-toggler");
+    const collapse = $(".navbar-collapse");
+    const close = $("#close");
+    
+    navToggler.on("click", function(){
+      collapse.toggleClass("active");
+    });
+    close.on("click", function(){
+      collapse.toggleClass("active");
+    });
+
+
     
     
     // loader
@@ -57,17 +70,7 @@ $(document).ready(function(){
 // }
 
 
-    // const navToggler = document.getElementById("nav-toggler");
-    // const collapse = document.querySelector(".navbar-collapse");
-    // const close = document.getElementById("close");
 
-    // close.addEventListener("click" , ()=>{
-    //   collapse.classList.remove("active")
-    // })
-
-    // navToggler.addEventListener("click" , ()=>{
-    //   collapse.classList.toggle("active")
-    // })
 
 
 

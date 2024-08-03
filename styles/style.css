@@ -355,20 +355,25 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
-  margin: 0 0 3rem 0;
+  /* margin: 0 0 3rem 0; */
   position: relative;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 header.header-home{
   background: url("../images/header.svg") !important;
-  height: 100vh !important;
+  height: auto ;
   background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;  
 }
-
+.breadcrumb{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
 .breadcrumb-item.active {
   color: var(--white);
   font-weight: bold;
@@ -395,8 +400,8 @@ header .content-seconed{
   max-width: 500px;
 }
 #hero .header-img{
-  aspect-ratio: 5/4;
-  margin-top: 8rem;
+  aspect-ratio: 4/4;
+  /* margin-top: 8rem; */
   position: relative;
   img{
     -o-object-fit: contain;
@@ -407,15 +412,16 @@ header .content-seconed{
   width: 70%;
   inset-inline-start: 15rem;
   top: -4rem;
+  height: 100%;
 }
 
-.navbar{
+/* .navbar{
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99999;
-}
+} */
 
 .navbar .navbar-brand{
   width: 100px;
@@ -455,6 +461,22 @@ header .content-seconed{
 }
 .navbar .navbar-nav .nav-item .nav-link:hover:after {
   width: 55%;
+}
+
+.navbar .navbar-toggler{
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  /* margin: 0; */
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.navbar .navbar-collapse{
+  display: flex;
+  justify-content: flex-end;
 }
 
 
@@ -818,32 +840,73 @@ footer .rights-links a{
 
 
 
+.nice-select:after {
+  right: unset;
+  inset-inline-end: 12px;
+
+}
+
+
+
+.nice-select {
+
+  -webkit-padding-start: 18px;
+
+          padding-inline-start: 18px;
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
 
 
 
 
 
-
-
-
+.navbar .navbar-collapse .for-mobile{
+  display: none;
+}
 
 /**====================================
   ===========* media queries *=========
 ====================================**/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   #hero .header-img .main-layer{
     width: 70%;
     inset-inline-start: 10rem;
     top: -4rem;
   }
+  #hero .header-img {
+    aspect-ratio: 3 / 4 !important;
+
+}
 }
 
 @media (max-width: 1040px) {
-
+  header.header-home{
+    height: auto !important;
+  }
+  #hero .header-img {
+    aspect-ratio: 3 / 4;
+    position: relative;
+}
 }
 
 @media (max-width: 991px) {
+  #hero{
+    margin-top: 5rem;
+  }
+  #hero .header-img {
+    aspect-ratio: 6/5;
+    position: relative;
+}
+  header {
+    height: 250px;
+  }
+  
+  
+  .breadcrumb{
+    margin-top: 2rem;
+  }
   #hero .header-img .main-layer{
     width: 70%;
     inset-inline-start: 7rem;
@@ -854,15 +917,55 @@ footer .rights-links a{
     flex-wrap: wrap;
     justify-content: center;
 }
+.navbar .navbar-nav .nav-item .nav-link.active:after, .navbar .navbar-nav .nav-item .nav-link:after {
+
+  left: 60%;
+}
+.navbar .navbar-collapse .for-mobile{
+  display: flex;
+}
+
+.navbar .navbar-brand {
+  width: 70px;
+}
+
+.navbar .navbar-collapse{
+  position: fixed;
+  top: 0;
+  inset-inline-end: -100%;
+  width: 50%;
+  height: 100vh;
+  z-index: 99999;
+  background: var(--primary);
+  justify-content: unset;
+  flex-direction: column;
+  transition: .3s;
+  padding: 1.5rem;
+}
+.navbar .navbar-collapse .navbar-nav{
+  gap: 1rem;
+}
+.navbar .navbar-collapse.active{
+  inset-inline-end: 0;
+}
+
+
 }
 
 
 @media (max-width: 768px) {
-
+  #hero{
+    margin-top: 3rem;
+  }
 }
 
 
 @media (max-width: 625px) {
+  
+  .navbar .navbar-collapse{
+    width: 100%;
+
+  }
   .main-layer{
 
     inset-inline-start: 0rem;
@@ -873,7 +976,7 @@ footer .rights-links a{
     inset-inline-end: 0rem;
   }
   #hero{
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   #hero .header-img .main-layer{
     width: 95%;
@@ -881,9 +984,10 @@ footer .rights-links a{
     top: 0rem;
   }
   #hero .header-img {
-    aspect-ratio: 4 / 4;
-    margin-top: 4rem;
+    aspect-ratio: 4/4;
+    margin-top: 1rem;
     position: relative;
+    height: 100%;
 }
   footer .mail-subscribe {
     width: 100%;

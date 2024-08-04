@@ -381,10 +381,11 @@ header.header-home{
   font-size: 1.1rem;
 }
 .breadcrumb-item+.breadcrumb-item::before {
-  float: right;
-  padding-left: var(--bs-breadcrumb-item-padding-x);
-  color: var(--white);
   content: var(--bs-breadcrumb-divider, ">>");
+  color: var(--white);
+}
+html[dir=ltr] .breadcrumb-item+.breadcrumb-item::before {
+    float: left !important;
 }
 header .hero-title{
   color: var(--secondary);
@@ -435,6 +436,7 @@ header .content-seconed{
   color: var(--white) !important;
   position: relative;
   transition: .3s;
+  text-align: center;
 }
 
 
@@ -515,21 +517,41 @@ header .content-seconed{
   color: var(--light-white);
 }
 .services .card .card-img {
-  /* height: 150px; */
-  width: 150px;
+  height: 170px;
+  width: 170px;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.services .card .card-img .overlay {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
 
-.services .card .card-img img {
+/* .services .card .card-img img {
   position: relative;
   z-index: 2;
   -o-object-fit: contain;
      object-fit: contain;
   
+} */
+.services .card .card-img img {
+  height: 70%;
+  width: 70%;
+  position: relative;
+  z-index: 2;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /* ======================= */
 
@@ -920,7 +942,7 @@ footer .rights-links a{
 }
 .navbar .navbar-nav .nav-item .nav-link.active:after, .navbar .navbar-nav .nav-item .nav-link:after {
 
-  left: 60%;
+  inset-inline-end: 60%;
 }
 .navbar .navbar-collapse .for-mobile{
   display: flex;
